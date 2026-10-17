@@ -26,3 +26,6 @@ First version does NOT include:
  - cloud storage
  - multiple users
  - job queues
+
+Live demo: https://flame-tigress-unmovable.ngrok-free.dev
+Upload a JPG/PNG/PDF (≤ 20 MB) and get the text back. It runs Chandra OCR 2 on my own GPU server. (If you see an ngrok notice, click "Visit Site".)
