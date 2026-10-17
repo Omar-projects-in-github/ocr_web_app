@@ -1,0 +1,75 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: ocr_backend
+    restart: unless-stopped
+
+    environment:
+      MODEL_PATH: /models/chandra
+
+    volumes:
+      - /home/omar_polat/projects/ocr_project/chandra_ocr_2/model:/models/chandra:ro
+
+    expose:
+      - "8002"
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities:
+                - gpu
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: ocr_frontend
+    restart: unless-stopped
+
+    environment:
+      OCR_API_URL: http://backend:8002/ocr
+      STREAMLIT_SERVER_MAX_UPLOAD_SIZE: 20
+
+    depends_on:
+      - backend
+
+    expose:
+      - "8501"
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: ocr_nginx
+    restart: unless-stopped
+
+    depends_on:
+      - frontend
+
+    ports:
+      - "8080:80"
+
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: ocr_ngrok
+    restart: unless-stopped
+
+    depends_on:
+      - nginx
+
+    environment:
+      NGROK_AUTHTOKEN: ${NGROK_AUTHTOKEN}
+
+    command:
+      - "http"
+      - "--url=${NGROK_DOMAIN}"
+      - "nginx:80"
+
+    ports:
+      - "127.0.0.1:4041:4040"
