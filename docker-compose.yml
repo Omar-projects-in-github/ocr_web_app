@@ -7,22 +7,64 @@ services:
     restart: unless-stopped
 
     environment:
-      MODEL_PATH: /models/chandra
+      VLLM_API_BASE: http://vllm:8000/v1
+      VLLM_MODEL_NAME: chandra
+      VLLM_API_KEY: dummy
+      MAX_OUTPUT_TOKENS: 12384
+
+    expose:
+      - "8002"
+
+    depends_on:
+      vllm:
+        condition: service_healthy
+
+  vllm:
+    image: vllm/vllm-openai:latest
+    container_name: ocr_vllm
+    restart: unless-stopped
+
+    command:
+      - "--model"
+      - "/models/chandra"
+      - "--served-model-name"
+      - "chandra"
+      - "--host"
+      - "0.0.0.0"
+      - "--port"
+      - "8000"
+      - "--trust-remote-code"
+      - "--gpu-memory-utilization"
+      - "0.3"
+      - "--max-num-seqs"
+      - "1"
 
     volumes:
       - /home/omar_polat/projects/ocr_project/chandra_ocr_2/model:/models/chandra:ro
 
-    expose:
-      - "8002"
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    healthcheck:
+      test:
+        - "CMD"
+        - "curl"
+        - "-f"
+        - "http://localhost:8000/v1/models"
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
 
     deploy:
       resources:
         reservations:
           devices:
-            - driver: nvidia
-              count: all
-              capabilities:
-                - gpu
+          - driver: nvidia
+            device_ids:
+              - "0"
+            capabilities:
+              - gpu
 
   frontend:
     build:
