@@ -1,0 +1,538 @@
+{
+  "metadata": {
+    "source_benchmark": "real_handwritten_data.json",
+    "image_count": 100,
+    "language": "kk",
+    "mode": "concurrent",
+    "concurrency": 2,
+    "warmup_count": 2,
+    "inference_backend": "vllm",
+    "prompt_type": "ocr_layout",
+    "python_version": "3.12.13",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "started_at": "2026-11-24T17:37:29.901269+00:00",
+    "completed_at": "2026-11-24T18:01:44.689581+00:00"
+  },
+  "summary": {
+    "requested_requests": 100,
+    "successful_requests": 100,
+    "failed_requests": 0,
+    "mean_latency_seconds": 28.798414844814687,
+    "median_latency_seconds": 9.105416931211948,
+    "p50_latency_seconds": 9.105416931211948,
+    "p95_latency_seconds": 109.81855622399597,
+    "min_latency_seconds": 2.7651652675122023,
+    "max_latency_seconds": 296.0954111572355,
+    "wall_time_seconds": 1454.7630285657942,
+    "throughput_images_per_second": 0.06873971776598344
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "utilization_percent": 100.0,
+    "memory_used_mb": 30026.0,
+    "memory_total_mb": 97887.0
+  },
+  "requests": [
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0001.jpg",
+      "latency_seconds": 5.133388824760914,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0002.jpg",
+      "latency_seconds": 13.106786848977208,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0003.jpg",
+      "latency_seconds": 11.1596087962389,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0004.jpg",
+      "latency_seconds": 5.354615746065974,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0005.jpg",
+      "latency_seconds": 4.365407908335328,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0006.jpg",
+      "latency_seconds": 7.392491620033979,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0007.jpg",
+      "latency_seconds": 8.357821568846703,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0008.jpg",
+      "latency_seconds": 5.747407000511885,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0009.jpg",
+      "latency_seconds": 116.13026799634099,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0010.jpg",
+      "latency_seconds": 94.49204436317086,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0011.jpg",
+      "latency_seconds": 26.294724699109793,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0012.jpg",
+      "latency_seconds": 8.696358174085617,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0013.jpg",
+      "latency_seconds": 3.2313919756561518,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0014.jpg",
+      "latency_seconds": 3.917484862729907,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0015.jpg",
+      "latency_seconds": 4.112053580582142,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0016.jpg",
+      "latency_seconds": 6.714755278080702,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0017.jpg",
+      "latency_seconds": 294.2329612672329,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0018.jpg",
+      "latency_seconds": 91.3811900112778,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0019.jpg",
+      "latency_seconds": 98.95382941141725,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0020.jpg",
+      "latency_seconds": 92.78741398826241,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0021.jpg",
+      "latency_seconds": 17.357833582907915,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0022.jpg",
+      "latency_seconds": 13.059517871588469,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0023.jpg",
+      "latency_seconds": 6.484431464225054,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0024.jpg",
+      "latency_seconds": 9.3880516551435,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0025.jpg",
+      "latency_seconds": 6.364592561498284,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0026.jpg",
+      "latency_seconds": 3.654339162632823,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0027.jpg",
+      "latency_seconds": 3.1786246802657843,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0028.jpg",
+      "latency_seconds": 4.1810041554272175,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0029.jpg",
+      "latency_seconds": 4.349747849628329,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0030.jpg",
+      "latency_seconds": 2.7651652675122023,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0031.jpg",
+      "latency_seconds": 114.97548315860331,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0032.jpg",
+      "latency_seconds": 103.80097902007401,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0033.jpg",
+      "latency_seconds": 12.595946149900556,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0034.jpg",
+      "latency_seconds": 8.228751063346863,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0035.jpg",
+      "latency_seconds": 8.202658722177148,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0036.jpg",
+      "latency_seconds": 7.270209513604641,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0037.jpg",
+      "latency_seconds": 11.499861970543861,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0038.jpg",
+      "latency_seconds": 11.313110828399658,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0039.jpg",
+      "latency_seconds": 7.935617385432124,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0040.jpg",
+      "latency_seconds": 8.090082688257098,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0041.jpg",
+      "latency_seconds": 7.245044717565179,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0042.jpg",
+      "latency_seconds": 8.923544973134995,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0043.jpg",
+      "latency_seconds": 11.229331774637103,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0044.jpg",
+      "latency_seconds": 8.816672831773758,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0045.jpg",
+      "latency_seconds": 7.501438591629267,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0046.jpg",
+      "latency_seconds": 7.376306129619479,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0047.jpg",
+      "latency_seconds": 6.646218983456492,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0048.jpg",
+      "latency_seconds": 8.835386099293828,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0049.jpg",
+      "latency_seconds": 11.022140452638268,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0050.jpg",
+      "latency_seconds": 9.642451878637075,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0051.jpg",
+      "latency_seconds": 7.886924596503377,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0052.jpg",
+      "latency_seconds": 10.085311066359282,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0053.jpg",
+      "latency_seconds": 12.698962308466434,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0054.jpg",
+      "latency_seconds": 11.150156693533063,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0055.jpg",
+      "latency_seconds": 9.287288889288902,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0056.jpg",
+      "latency_seconds": 37.79334894195199,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0057.jpg",
+      "latency_seconds": 6.673975585028529,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0058.jpg",
+      "latency_seconds": 7.257368732243776,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0059.jpg",
+      "latency_seconds": 11.050128940492868,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0060.jpg",
+      "latency_seconds": 4.229061843827367,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0061.jpg",
+      "latency_seconds": 4.842360382899642,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0062.jpg",
+      "latency_seconds": 2.9320407826453447,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0063.jpg",
+      "latency_seconds": 5.754290034994483,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0064.jpg",
+      "latency_seconds": 5.555657844990492,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0065.jpg",
+      "latency_seconds": 4.32101222127676,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0066.jpg",
+      "latency_seconds": 296.0954111572355,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0067.jpg",
+      "latency_seconds": 91.4791178572923,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0068.jpg",
+      "latency_seconds": 91.38461560197175,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0069.jpg",
+      "latency_seconds": 107.92600066401064,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0070.jpg",
+      "latency_seconds": 11.515426008030772,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0071.jpg",
+      "latency_seconds": 10.31497891433537,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0072.jpg",
+      "latency_seconds": 7.320453265681863,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0073.jpg",
+      "latency_seconds": 6.987286480143666,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0074.jpg",
+      "latency_seconds": 12.67538652382791,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0075.jpg",
+      "latency_seconds": 13.568286649882793,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0076.jpg",
+      "latency_seconds": 6.067946698516607,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0077.jpg",
+      "latency_seconds": 8.147345572710037,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0078.jpg",
+      "latency_seconds": 15.702446449548006,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0079.jpg",
+      "latency_seconds": 23.19072532840073,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0080.jpg",
+      "latency_seconds": 24.207329204306006,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0081.jpg",
+      "latency_seconds": 16.420846328139305,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0082.jpg",
+      "latency_seconds": 15.236453898251057,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0083.jpg",
+      "latency_seconds": 24.735954543575644,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0084.jpg",
+      "latency_seconds": 109.54713901691139,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0085.jpg",
+      "latency_seconds": 93.80868021771312,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0086.jpg",
+      "latency_seconds": 6.958825500681996,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0087.jpg",
+      "latency_seconds": 7.089065719395876,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0088.jpg",
+      "latency_seconds": 4.042340911924839,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0089.jpg",
+      "latency_seconds": 8.776420339941978,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0090.jpg",
+      "latency_seconds": 16.371436286717653,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0091.jpg",
+      "latency_seconds": 10.78484814800322,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0092.jpg",
+      "latency_seconds": 3.71884398534894,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0093.jpg",
+      "latency_seconds": 30.587554313242435,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0094.jpg",
+      "latency_seconds": 45.18126284703612,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0095.jpg",
+      "latency_seconds": 123.87687102146447,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0096.jpg",
+      "latency_seconds": 99.08970828168094,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0097.jpg",
+      "latency_seconds": 19.76149939931929,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0098.jpg",
+      "latency_seconds": 14.699657121673226,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0099.jpg",
+      "latency_seconds": 3.960179029032588,
+      "error": false
+    },
+    {
+      "image_path": "/home/omar_polat/projects/ocr_project/data/real_non_handwritten_data/images/0100.jpg",
+      "latency_seconds": 3.596703225746751,
+      "error": false
+    }
+  ]
+}
